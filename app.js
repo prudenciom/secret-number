@@ -1,20 +1,23 @@
 let listaDeNumeroSorteado= [];
-let numeroLimite = 10;
+let numeroLimite = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
-function exibirTexto (tag, texto){
+
+function exibirTexto(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2})
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate: 1.2});
 }
-function mensagemInicial(){
-exibirTexto('h1','Jogo do número secreto');
 
-exibirTexto ('p','Escolha um número entre 1 e 10')}
-responsiveVoice.speak('Escolha um número entre 1 e 10', 'Brazilian Portuguese Female', {rate:1.2});
-mensagemInicial();
+function mensagemInicial() {
+    exibirTexto('h1', 'Jogo do número secreto');
+    exibirTexto('p', 'Escolha um número entre 1 e 100');
+}
+  mensagemInicial();
+
 function verificarChute(){
     let chute = document.querySelector ('input').value;
+
    if(chute == numeroSecreto){
     exibirTexto('h1', 'Acertou!');
     let palavraTentativa = tentativas >1? 'tentativas':'tentativa';
