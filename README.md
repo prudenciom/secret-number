@@ -43,3 +43,20 @@ O foco principal foi praticar **lógica de programação**, **condicionais** e *
 1. Clone o repositório:
 ```bash
 git clone https://github.com/prudenciom/secret-number.git
+```
+## 📚 Aprendizados
+
+- Introdução à lógica de programação com JavaScript
+- Uso de `Math.random()` e `parseInt()`
+- Manipulação do DOM com `querySelector` e `innerText`
+- Validação de entrada do usuário
+- Estrutura de decisão com `if`, `else if` e `else`
+
+## 📎 Créditos
+
+Projeto desenvolvido durante o curso:  
+🎓 [Lógica de Programação com JavaScript – Alura | Oracle Next Education](https://www.alura.com.br)
+
+<p align="center">
+  Feito com 💙 por <strong>Maiara Franco</strong> • <a href="https://github.com/prudenciom" target="_blank">GitHub</a>
+</p>
